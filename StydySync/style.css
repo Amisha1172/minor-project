@@ -48,10 +48,18 @@ body{
     font-style: normal; */
   
 }
-nav{
-    display: flex;
+.nav{
+    display: none;
+    /* display: flex; */
     gap: 2rem;
 }
+
+@media screen  and (min-width:768px) {
+    .nav{
+        display: flex;
+    }
+}
+
 .nav-links{
     color: #718096;
     font-size: 1.125rem;
@@ -70,8 +78,25 @@ nav{
     font-weight: 600;
     background-color: blue;
 }
+.menu-button img{
+    display: none;
+    height: 50px;
+    width: 40px;
+}
 
 
+@media screen  and (min-width:768px) {
+    .contact-button{
+        display: flex;
+    }
+   
+}
+
+@media screen  and (max-width:768px){
+.menu-button img{
+        display: block;
+}
+}
 
 
 
